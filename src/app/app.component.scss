@@ -1,0 +1,16 @@
+.body-container {
+  display: grid;
+  grid-template-rows: 80px auto 100px;
+  min-height: 100vh;
+
+  .app-header {
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 300px auto;
+  }
+
+  .app-footer {
+  }
+}
