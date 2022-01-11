@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "run": "ng build && cordova run ios --target=iPad-mini-6th-generation",
+    "build": "mkdir -p BuildMobile/www && ng build --base-href . --output-path ./BuildMobile/www/ && cd BuildMobile && npx cordova prepare ios && npx cordova run ios",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
